@@ -1,0 +1,26 @@
+autodiscover.synceptor.com 1 52.96.201.120
+autodiscover.synceptor.com 1 52.96.79.152
+autodiscover.synceptor.com 1 52.96.79.40
+autodiscover.synceptor.com 1 52.96.79.72
+autodiscover.synceptor.com 5 acdcatm.autodiscover.mira.tm.svc.cloud.microsoft.
+autodiscover.synceptor.com 5 autod.ms-acdc-autod.office.com.
+autodiscover.synceptor.com 5 autodiscover.outlook.cloud.microsoft.
+autodiscover.synceptor.com 5 autodiscover.outlook.com.
+synceptor.com 1 185.199.108.153
+synceptor.com 1 185.199.109.153
+synceptor.com 1 185.199.110.153
+synceptor.com 1 185.199.111.153
+synceptor.com 15 0 synceptor-com.mail.protection.outlook.com.
+synceptor.com 16 MS=ms73494920
+synceptor.com 16 mscid=hSYB1alEPuFPOem1vwFqHqaWGXmVetElw7AcH0MSuhyPQXSGcvYWdah0l3QR4dbMBDQ5ZWM9w3Wmcy59YXaWAA==
+synceptor.com 16 v=spf1 include:spf.protection.outlook.com -all
+synceptor.com 28 2606:50c0:8000::153
+synceptor.com 28 2606:50c0:8001::153
+synceptor.com 28 2606:50c0:8002::153
+synceptor.com 28 2606:50c0:8003::153
+www.synceptor.com 1 185.199.108.153
+www.synceptor.com 1 185.199.109.153
+www.synceptor.com 1 185.199.110.153
+www.synceptor.com 1 185.199.111.153
+www.synceptor.com 5 ghs.googlehosted.com.
+www.synceptor.com 5 slsynceptor.github.io.
