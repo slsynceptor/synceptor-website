@@ -40,6 +40,11 @@
   .card h3{margin:0 0 10px;font-size:19px}
   .card p{margin:0;color:#1a1a1a;font-size:16px}
   .lede{max-width:780px;margin:0 0 32px}
+  .profile{display:grid;grid-template-columns:1fr 1fr;gap:0 48px;border-top:1px solid var(--border)}
+  .pitem{padding:20px 0;border-bottom:1px solid var(--border)}
+  .pitem h3{margin:0 0 6px;font-size:18px}
+  .pitem p{margin:0;font-size:16px;color:#1a1a1a}
+  .note{color:var(--muted);font-size:14px;margin:20px 0 0}
   .lede strong{color:var(--brand-strong)}
   .person{display:grid;grid-template-columns:260px 1fr;gap:32px;align-items:start}
   .person .name{font-size:21px;font-weight:700;margin:0}
@@ -57,7 +62,7 @@
     nav a{margin-left:16px;font-size:14px}
     header img{height:26px}
     .hero{padding:64px 0 56px}.hero h1{font-size:32px}.hero p{font-size:18px}
-    .grid,.person,.contact{grid-template-columns:1fr}
+    .grid,.person,.contact,.profile{grid-template-columns:1fr}
   }
 </style>
 </head>
@@ -93,12 +98,18 @@
     <div class="wrap">
       <h2>Focus</h2>
       <div class="h2rule"></div>
-      <p class="lede">We are developing therapeutics for metabolic diseases with large unmet need. Our lead program is a first-in-class therapeutic directed at a novel target.</p>
-      <div class="grid">
-        <div class="card"><h3>Obesity</h3><p>Therapeutics that may reduce body weight while preserving lean mass and metabolic health.</p></div>
-        <div class="card"><h3>Type 2 diabetes</h3><p>Approaches that target insulin sensitivity and glycemic control.</p></div>
-        <div class="card"><h3>MASH</h3><p>Biologics aimed at hepatic steatosis, inflammation and fibrosis.</p></div>
+      <p class="lede">We are developing therapeutics for obesity, type 2 diabetes and MASH. Our lead program is a first-in-class therapeutic directed at a novel target, and our molecules are designed for a differentiated therapeutic profile.</p>
+      <h3 class="subhead">Target therapeutic profile</h3>
+      <div class="profile">
+        <div class="pitem"><h3>Balanced weight loss</h3><p>Combines reduced food intake with increased energy expenditure, rather than relying on appetite suppression alone.</p></div>
+        <div class="pitem"><h3>Lean mass preservation</h3><p>Weight loss driven predominantly by loss of fat, with lean mass preserved on body composition imaging.</p></div>
+        <div class="pitem"><h3>Durable weight loss</h3><p>Limited weight regain in nonhuman primates, consistent with a potential first-in-class mechanism acting on the central melanocortin pathway that governs long-term energy balance.</p></div>
+        <div class="pitem"><h3>Gastrointestinal tolerability</h3><p>Minimal delay in gastric emptying and low taste aversion in preclinical models compared with the GLP-1 receptor agonist class.</p></div>
+        <div class="pitem"><h3>Long-acting pharmacology</h3><p>Extended half-life in nonhuman primates, supporting potentially infrequent dosing.</p></div>
+        <div class="pitem"><h3>Glycemic control</h3><p>Robust glucose lowering and improved insulin sensitivity.</p></div>
+        <div class="pitem"><h3>Liver fat and lipids</h3><p>Reductions in liver fat and circulating cholesterol, relevant to MASH and cardiometabolic risk.</p></div>
       </div>
+      <p class="note">Profile based on preclinical studies in rodents and nonhuman primates. Our therapeutics have not been evaluated in humans.</p>
     </div>
   </section>
 
