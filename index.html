@@ -15,56 +15,52 @@
 "address":{"@type":"PostalAddress","streetAddress":"9276 Scranton Rd, Suite 500","addressLocality":"San Diego","addressRegion":"CA","postalCode":"92121","addressCountry":"US"}}
 </script>
 <style>
-  :root{--ink:#000;--muted:#5a5e66;--brand:#0070c0;--brand-strong:#005a9c;--border:#d9dce1;--sunken:#f4f5f7;
-        --grad:linear-gradient(90deg,#0499af,#3fb885,#7ad75a);}
+  :root{--ink:#000;--muted:#5a5e66;--brand:#0070c0;--brand-strong:#005a9c;--border:#d9dce1;
+        --grad:linear-gradient(90deg,#0499af,#3fb885,#7ad75a);--pad:clamp(18px,4.5vw,64px)}
   *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{margin:0;background:#fff;color:var(--ink);font-family:Helvetica,Arial,sans-serif;font-size:17px;line-height:1.6}
+  html{scroll-behavior:smooth;font-size:clamp(16px,0.55vw + 11px,21px)}
+  body{margin:0;background:#fff;color:var(--ink);font-family:Helvetica,Arial,sans-serif;font-size:1rem;line-height:1.6}
   a{color:var(--brand-strong)}
   a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
-  .wrap{max-width:1040px;margin:0 auto;padding:0 28px}
-  @media (max-width:420px){.wrap{padding:0 18px}}
-  header{border-bottom:1px solid var(--border)}
-  header .wrap{display:flex;align-items:center;justify-content:space-between;height:96px}
-  header img{height:56px;width:auto;display:block;margin-left:-6px}
-  nav a{color:var(--ink);text-decoration:none;margin-left:32px;font-size:16px}
+  .wrap{max-width:calc(68rem + 2*var(--pad));margin:0 auto;padding:0 var(--pad)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;height:5.2rem}
+  header img{height:3rem;width:auto;display:block;margin-left:-0.33rem}
+  nav a{color:var(--ink);text-decoration:none;margin-left:1.8rem;font-size:0.95rem}
   nav a:hover{color:var(--brand-strong)}
   .rule{height:4px;background:var(--grad)}
-  .hero{padding:96px 0 80px}
-  .hero h1{font-size:44px;line-height:1.15;font-weight:700;margin:0 0 24px;max-width:780px;letter-spacing:-.01em}
-  .hero p{font-size:20px;max-width:720px;margin:0;color:#1a1a1a}
-  section{padding:72px 0;border-top:1px solid var(--border)}
-  h2{font-size:28px;margin:0 0 8px;font-weight:700}
-  .h2rule{width:72px;height:4px;background:var(--grad);margin:0 0 32px}
-  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-  .card{border:1px solid var(--border);padding:28px}
-  .card h3{margin:0 0 10px;font-size:19px}
-  .card p{margin:0;color:#1a1a1a;font-size:16px}
-  .lede{max-width:780px;margin:0 0 32px}
-  .profile{display:grid;grid-template-columns:1fr 1fr;gap:0 48px;border-top:1px solid var(--border)}
-  .pitem{padding:20px 0;border-bottom:1px solid var(--border)}
-  .pitem h3{margin:0 0 6px;font-size:18px}
-  .pitem p{margin:0;font-size:16px;color:#1a1a1a}
-  .note{color:var(--muted);font-size:14px;margin:20px 0 0}
+  .hero{padding:clamp(56px,7vw,128px) 0 clamp(48px,6vw,112px)}
+  .hero h1{font-size:clamp(2rem,1.2rem + 2.6vw,3.6rem);line-height:1.12;font-weight:700;margin:0 0 1.3rem;max-width:22em;letter-spacing:-.01em}
+  .hero p{font-size:1.2rem;max-width:44em;margin:0;color:#1a1a1a}
+  section{padding:clamp(48px,5.5vw,104px) 0;border-top:1px solid var(--border)}
+  h2{font-size:clamp(1.6rem,1.2rem + 1vw,2.3rem);margin:0 0 .5rem;font-weight:700}
+  .h2rule{width:4.5rem;height:4px;background:var(--grad);margin:0 0 2rem}
+  .lede{margin:0 0 2rem}
   .lede strong{color:var(--brand-strong)}
-  .person{display:grid;grid-template-columns:260px 1fr;gap:32px;align-items:start}
-  .person .name{font-size:21px;font-weight:700;margin:0}
-  .person .title{color:var(--muted);margin:4px 0 0;font-size:15px}
-  .person p{margin:0 0 12px}
-  .contact{display:grid;grid-template-columns:1fr 2fr;gap:40px}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+  .card{border:1px solid var(--border);padding:1.6rem}
+  .card h3{margin:0 0 .6rem;font-size:1.1rem}
+  .card p{margin:0;color:#1a1a1a;font-size:.95rem}
+  .subhead{font-size:.85rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin:0 0 1rem}
+  .profile{display:grid;grid-template-columns:1fr 1fr;gap:0 3rem;border-top:1px solid var(--border)}
+  .pitem{padding:1.2rem 0;border-bottom:1px solid var(--border)}
+  .pitem h3{margin:0 0 .35rem;font-size:1.05rem}
+  .pitem p{margin:0;font-size:.95rem;color:#1a1a1a}
+  .note{color:var(--muted);font-size:.8rem;margin:1.2rem 0 0}
+  .contact{display:grid;grid-template-columns:1fr 2fr;gap:2.5rem}
+  .contact h3{font-size:.85rem;color:var(--muted);font-weight:400;margin:0 0 .4rem}
+  .contact p{margin:0;font-size:1.05rem}
   .formwrap iframe{width:100%;height:880px;border:1px solid var(--border);display:block}
-  .subhead{font-size:15px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin:0 0 16px}
-  .contact h3{font-size:15px;color:var(--muted);font-weight:400;margin:0 0 6px;text-transform:none}
-  .contact p{margin:0;font-size:18px}
-  footer{margin-top:24px}
-  footer .bar{height:28px;background:var(--grad)}
-  footer .wrap{padding-top:20px;padding-bottom:28px;color:var(--muted);font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
-  @media (max-width:760px){
-    nav a{margin-left:12px;font-size:13px}
-    header img{height:34px;margin-left:-4px}
-    header .wrap{height:72px}
-    .hero{padding:64px 0 56px}.hero h1{font-size:32px}.hero p{font-size:18px}
-    .grid,.person,.contact,.profile{grid-template-columns:1fr}
+  footer{margin-top:1.5rem}
+  footer .bar{height:1.6rem;background:var(--grad)}
+  footer .wrap{padding-top:1.2rem;padding-bottom:1.6rem;color:var(--muted);font-size:.8rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+  @media (max-width:900px){
+    .grid{grid-template-columns:1fr}
+    .profile,.contact{grid-template-columns:1fr}
+  }
+  @media (max-width:560px){
+    header .wrap{height:4.2rem}
+    header img{height:2.1rem;margin-left:-4px}
+    nav a{margin-left:.75rem;font-size:.8rem}
   }
 </style>
 </head>
@@ -123,8 +119,8 @@
       <h3 class="subhead">Scientific advisory board</h3>
       <div class="grid">
         <div class="card"><h3>Ronald M. Evans, PhD</h3><p>Professor and Director, Gene Expression Laboratory, Salk Institute. Member, National Academy of Sciences and National Academy of Medicine.</p></div>
-        <div class="card"><h3>Chih-Hao Lee, PhD</h3><p>Distinguished Professor, Genomics Research Center, Academia Sinica. Formerly Professor, Molecular Metabolism, Harvard T.H. Chan School of Public Health.</p></div>
-        <div class="card"><h3>Rohit Loomba, MD, MHSc</h3><p>Professor of Medicine, Chief of Gastroenterology and Hepatology, and Founding Director, MASLD Research Center, University of California San Diego.</p></div>
+        <div class="card"><h3>Chih-Hao Lee, PhD</h3><p>Distinguished Professor, Genomics Research Center, Academia Sinica. Formerly Professor, Harvard T.H. Chan School of Public Health.</p></div>
+        <div class="card"><h3>Rohit Loomba, MD, MHSc</h3><p>Professor of Medicine, Chief of Gastroenterology and Hepatology, and Founding Director, MASLD Research Center, UC San Diego.</p></div>
       </div>
     </div>
   </section>
