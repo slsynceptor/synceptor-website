@@ -23,10 +23,11 @@
   a{color:var(--brand-strong)}
   a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
   .wrap{max-width:1040px;margin:0 auto;padding:0 28px}
+  @media (max-width:420px){.wrap{padding:0 18px}}
   header{border-bottom:1px solid var(--border)}
-  header .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
-  header img{height:34px;width:auto;display:block}
-  nav a{color:var(--ink);text-decoration:none;margin-left:28px;font-size:15px}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;height:96px}
+  header img{height:56px;width:auto;display:block;margin-left:-6px}
+  nav a{color:var(--ink);text-decoration:none;margin-left:32px;font-size:16px}
   nav a:hover{color:var(--brand-strong)}
   .rule{height:4px;background:var(--grad)}
   .hero{padding:96px 0 80px}
@@ -59,8 +60,9 @@
   footer .bar{height:28px;background:var(--grad)}
   footer .wrap{padding-top:20px;padding-bottom:28px;color:var(--muted);font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
   @media (max-width:760px){
-    nav a{margin-left:16px;font-size:14px}
-    header img{height:26px}
+    nav a{margin-left:12px;font-size:13px}
+    header img{height:34px;margin-left:-4px}
+    header .wrap{height:72px}
     .hero{padding:64px 0 56px}.hero h1{font-size:32px}.hero p{font-size:18px}
     .grid,.person,.contact,.profile{grid-template-columns:1fr}
   }
