@@ -18,7 +18,7 @@
   :root{--ink:#000;--muted:#5a5e66;--brand:#0070c0;--brand-strong:#005a9c;--border:#d9dce1;
         --grad:linear-gradient(90deg,#0499af,#3fb885,#7ad75a);--pad:clamp(18px,4.5vw,64px)}
   *{box-sizing:border-box}
-  html{scroll-behavior:smooth;font-size:clamp(16px,0.55vw + 11px,21px)}
+  html{scroll-behavior:smooth;font-size:clamp(16px,1.338vw,21px)}
   body{margin:0;background:#fff;color:var(--ink);font-family:Helvetica,Arial,sans-serif;font-size:1rem;line-height:1.6}
   a{color:var(--brand-strong)}
   a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
@@ -37,14 +37,14 @@
   .lede{margin:0 0 2.2rem;font-size:clamp(1.15rem,0.95rem + 0.45vw,1.45rem);line-height:1.5;color:#111}
   .lede strong{color:var(--brand-strong)}
   .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
-  .card{border:1px solid var(--border);padding:1.6rem}
-  .card h3{margin:0 0 .6rem;font-size:1.1rem}
-  .card p{margin:0;color:#1a1a1a;font-size:.95rem}
+  .card{border:1px solid var(--border);padding:1.8rem}
+  .card h3{margin:0 0 .7rem;font-size:1.3rem}
+  .card p{margin:0;color:#111;font-size:1.12rem;line-height:1.55}
   .subhead{font-size:.85rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin:0 0 1rem}
   .profile{display:grid;grid-template-columns:1fr 1fr;gap:0 3rem;border-top:1px solid var(--border)}
   .pitem{padding:1.2rem 0;border-bottom:1px solid var(--border)}
-  .pitem h3{margin:0 0 .35rem;font-size:1.05rem}
-  .pitem p{margin:0;font-size:.95rem;color:#1a1a1a}
+  .pitem h3{margin:0 0 .4rem;font-size:1.25rem}
+  .pitem p{margin:0;font-size:1.12rem;line-height:1.55;color:#111}
   .note{color:var(--muted);font-size:.8rem;margin:1.2rem 0 0}
   .contact{display:grid;grid-template-columns:1fr 1.25fr;gap:3.5rem;align-items:start}
   .cbig{font-size:clamp(1.35rem,1rem + 1vw,2rem);line-height:1.3;font-weight:700;margin:0 0 1.2rem}
@@ -88,7 +88,7 @@
       <div class="h2rule"></div>
       <p class="lede">Our name describes how we design medicines: <strong>syn</strong>ergistic, <strong>syn</strong>cretic and <strong>syn</strong>chronous re<strong>ceptor</strong> targeting. Simply fusing active molecules together rarely adds up to a better medicine. Each of our therapeutics is instead a single protein engineered as one integrated design, so that its activities on complementary metabolic hormone pathways work in concert. We design them through iterative rounds of protein engineering, computational modeling and receptor pharmacology profiling.</p>
       <div class="grid">
-        <div class="card"><h3>Synergistic</h3><p>Engineered ligands with a balanced, selective receptor activation profile, keeping metabolic benefits while limiting signaling linked to unwanted effects.</p></div>
+        <div class="card"><h3>Synergistic</h3><p>Engineered ligands with a balanced, selective receptor activation profile, retaining metabolic benefits while limiting signaling linked to unwanted effects.</p></div>
         <div class="card"><h3>Syncretic</h3><p>Designed molecules that unite the activities of complementary metabolic hormone pathways, a pairing not found together in any single natural hormone.</p></div>
         <div class="card"><h3>Synchronous</h3><p>One molecule with a unified pharmacokinetic profile engages both pathways at once, in the same tissues, for a coordinated metabolic response.</p></div>
       </div>
@@ -122,8 +122,8 @@
       <h3 class="subhead">Scientific advisory board</h3>
       <div class="grid">
         <div class="card"><h3>Ronald M. Evans, PhD</h3><p>Professor and Director, Gene Expression Laboratory, Salk Institute. Member, National Academy of Sciences and National Academy of Medicine.</p></div>
-        <div class="card"><h3>Chih-Hao Lee, PhD</h3><p>Distinguished Professor, Genomics Research Center, Academia Sinica. Formerly Professor, Harvard T.H. Chan School of Public Health.</p></div>
-        <div class="card"><h3>Rohit Loomba, MD, MHSc</h3><p>Professor of Medicine, Chief of Gastroenterology and Hepatology, and Founding Director, MASLD Research Center, UC San Diego.</p></div>
+        <div class="card"><h3>Chih-Hao Lee, PhD</h3><p>Distinguished Professor, Genomics Research Center, Academia Sinica. Formerly Professor of Molecular Metabolism, Harvard T.H. Chan School of Public Health.</p></div>
+        <div class="card"><h3>Rohit Loomba, MD, MHSc</h3><p>Professor of Medicine, Chief of Gastroenterology and Hepatology, and Founding Director, MASLD Research Center, University of California San Diego.</p></div>
       </div>
     </div>
   </section>
